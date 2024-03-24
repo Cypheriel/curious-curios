@@ -1,0 +1,32 @@
+modLoader = "kotlinforforge"
+loaderVersion = "[3,)"
+license = "LGPL-3.0-or-later"
+
+[[mods]]
+modId = "curious_curios"
+version = "${file.jarVersion}"
+displayName = "Curious Curios"
+credits = ""
+authors = "Cypheriel"
+description = ""
+
+[[dependencies.curious_curios]]
+modId = "forge"
+mandatory = true
+versionRange = "[43,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.curious_curios]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.19.1,1.19.3)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.curious_curios]]
+modId = "curios"
+mandatory = true
+versionRange = "[1.19.2-5.1.1.0,)"
+ordering = "NONE"
+side = "BOTH"
