@@ -24,26 +24,19 @@ object ItemRegistry {
         items.register(bus)
     }
 
-    val glowingIngot: RegistryObject<Item> = items.register("glowing_ingot") {
-        Item(Item.Properties().tab(CuriousCuriosTab))
-    }
+    val glowingIngot: RegistryObject<Item> =
+        items.register("glowing_ingot") { Item(Item.Properties().tab(CuriousCuriosTab)) }
 
     val glowingNugget: RegistryObject<Item> =
-        items.register("glowing_nugget") {
-            Item(Item.Properties().tab(CuriousCuriosTab))
-        }
+        items.register("glowing_nugget") { Item(Item.Properties().tab(CuriousCuriosTab)) }
 
     val glowingPowder: RegistryObject<Item> =
-        items.register("glowing_powder") {
-            Item(Item.Properties().tab(CuriousCuriosTab))
-        }
+        items.register("glowing_powder") { Item(Item.Properties().tab(CuriousCuriosTab)) }
     val glowingGem: RegistryObject<Item> =
-        items.register("glowing_gem") {
-            Item(Item.Properties().tab(CuriousCuriosTab))
-        }
+        items.register("glowing_gem") { Item(Item.Properties().tab(CuriousCuriosTab)) }
 
     // -- Curios --
-    var ringOfEnchantedEyes: RegistryObject<Item> = items.register("ring_of_enchanted_eyes") { RingOfEnchantedEyes }
+    val ringOfEnchantedEyes: RegistryObject<Item> = items.register("ring_of_enchanted_eyes") { RingOfEnchantedEyes }
     val stoneOfInertialNull: RegistryObject<Item> = items.register("stone_of_inertia_null") { StoneOfInertiaNull }
     val stoneOfTheSea: RegistryObject<Item> = items.register("stone_of_the_sea") { StoneOfTheSea }
 }
