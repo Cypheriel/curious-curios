@@ -19,7 +19,7 @@ import top.theillusivec4.curios.api.CuriosApi;
 @Mixin(Explosion.class)
 public class ExplosionMixin {
     @Inject(at = @At("RETURN"), method = "getSeenPercent", cancellable = true)
-    private static void getExplosionKnockbackAfterDampener(Vec3 pExplosionVector, Entity pEntity, CallbackInfoReturnable<Float> cir) {
+    private static void getSeenPercent(Vec3 pExplosionVector, Entity pEntity, CallbackInfoReturnable<Float> cir) {
         if (!(pEntity instanceof LivingEntity livingEntity)) {
             return;
         }
