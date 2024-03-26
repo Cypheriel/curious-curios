@@ -5,11 +5,7 @@ on:
     branches: [ "*" ]
   pull_request:
     branches: [ "*" ]
-  workflow_dispatch:
-    tag:
-      required: false
-      type: string
-
+    
 permissions:
   contents: read
 
@@ -46,3 +42,9 @@ jobs:
         with:
           arguments: build
           timeout-minutes: 25
+          
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: Package
+          path: build/libs/*.jar
