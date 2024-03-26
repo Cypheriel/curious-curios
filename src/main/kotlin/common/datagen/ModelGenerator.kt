@@ -29,5 +29,6 @@ class ModelGenerator(
         basicModel("ring_of_enchanted_eyes")
         basicModel("stone_of_inertia_null")
         basicModel("stone_of_the_sea")
+        basicModel("stone_of_greater_inertia")
     }
 }
