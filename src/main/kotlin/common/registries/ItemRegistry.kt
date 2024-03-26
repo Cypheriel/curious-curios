@@ -8,6 +8,7 @@ package dev.cypheriel.curious_curios.common.registries
 import dev.cypheriel.curious_curios.CuriousCurios
 import dev.cypheriel.curious_curios.common.creative_tabs.CuriousCuriosTab
 import dev.cypheriel.curious_curios.common.items.curios.RingOfEnchantedEyes
+import dev.cypheriel.curious_curios.common.items.curios.StoneOfTheSea
 import net.minecraft.world.item.Item
 import net.minecraftforge.eventbus.api.IEventBus
 import net.minecraftforge.registries.DeferredRegister
@@ -42,4 +43,5 @@ object ItemRegistry {
 
     // -- Curios --
     var ringOfEnchantedEyes: RegistryObject<Item> = items.register("ring_of_enchanted_eyes") { RingOfEnchantedEyes }
+    val stoneOfTheSea: RegistryObject<Item> = items.register("stone_of_the_sea") { StoneOfTheSea }
 }
