@@ -37,6 +37,9 @@ jobs:
       - name: Grant permission for gradlew
         run: chmod +x gradlew
 
+      - name: Clear build directory
+        run: rm -rf build/libs/*
+
       - name: Build
         uses: gradle/gradle-build-action@v2
         with:
@@ -46,5 +49,5 @@ jobs:
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: Package
+          name: Curious Curios
           path: build/libs/*.jar
