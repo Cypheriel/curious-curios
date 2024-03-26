@@ -1,8 +1,8 @@
 {
   "replace": "false",
   "values": [
-    "curious_curios:ring_of_enchanted_eyes"
     "curious_curios:ring_of_enchanted_eyes",
+    "curious_curios:stone_of_inertia_null",
     "curious_curios:stone_of_the_sea"
   ]
 }
