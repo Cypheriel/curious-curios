@@ -1,3 +1,8 @@
+/*
+ * Curious Curios — A Minecraft mod
+ * Copyright (C) 2024  Cypheriel
+ */
+
 package dev.cypheriel.curious_curios.common.events
 
 import dev.cypheriel.curious_curios.CuriousCurios
