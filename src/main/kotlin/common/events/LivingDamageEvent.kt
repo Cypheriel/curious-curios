@@ -12,14 +12,12 @@ import net.minecraft.world.effect.MobEffectInstance
 import net.minecraft.world.effect.MobEffects
 import net.minecraftforge.event.entity.living.LivingDamageEvent
 import net.minecraftforge.eventbus.api.SubscribeEvent
-import net.minecraftforge.fml.common.Mod
+import net.minecraftforge.fml.common.Mod.EventBusSubscriber
 import top.theillusivec4.curios.api.CuriosApi
 import kotlin.random.Random
 
-@Mod.EventBusSubscriber(modid = CuriousCurios.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
+@EventBusSubscriber(modid = CuriousCurios.MOD_ID, bus = EventBusSubscriber.Bus.FORGE)
 object LivingDamageEvent {
-
-    private val random = Random
 
     @SubscribeEvent
     fun onLivingDamage(event: LivingDamageEvent) {
@@ -35,7 +33,7 @@ object LivingDamageEvent {
         if (!CuriosApi.getCuriosHelper().findFirstCurio(attacker, WitherRing).isPresent) return
 
         // add effect to attacked entity if attacker has wither ring
-        if (random.nextInt(5) == 0) {
+        if (Random.nextInt(5) == 0) {
             // duration is 100 ticks because that's how long it takes for lastHurtByMob to be cleared
             event.entity.addEffect(MobEffectInstance(MobEffects.WITHER, 5 * 20, 1), attacker)
         }
