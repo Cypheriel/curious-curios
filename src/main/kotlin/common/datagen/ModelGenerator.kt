@@ -30,5 +30,6 @@ class ModelGenerator(
         basicModel("stone_of_inertia_null")
         basicModel("stone_of_the_sea")
         basicModel("stone_of_greater_inertia")
+        basicModel("wither_ring")
     }
 }
