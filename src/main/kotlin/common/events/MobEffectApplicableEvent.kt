@@ -12,10 +12,10 @@ import net.minecraft.world.effect.MobEffects
 import net.minecraftforge.event.entity.living.MobEffectEvent
 import net.minecraftforge.eventbus.api.Event
 import net.minecraftforge.eventbus.api.SubscribeEvent
-import net.minecraftforge.fml.common.Mod
+import net.minecraftforge.fml.common.Mod.EventBusSubscriber
 import top.theillusivec4.curios.api.CuriosApi
 
-@Mod.EventBusSubscriber(modid = CuriousCurios.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
+@EventBusSubscriber(modid = CuriousCurios.MOD_ID, bus = EventBusSubscriber.Bus.FORGE)
 object MobEffectApplicableEvent {
     @SubscribeEvent
     fun mobEffectApplicable(event: MobEffectEvent.Applicable) {
