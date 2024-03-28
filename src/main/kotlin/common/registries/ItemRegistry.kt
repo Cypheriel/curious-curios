@@ -7,10 +7,7 @@ package dev.cypheriel.curious_curios.common.registries
 
 import dev.cypheriel.curious_curios.CuriousCurios
 import dev.cypheriel.curious_curios.common.creative_tabs.CuriousCuriosTab
-import dev.cypheriel.curious_curios.common.items.curios.RingOfEnchantedEyes
-import dev.cypheriel.curious_curios.common.items.curios.StoneOfGreaterInertia
-import dev.cypheriel.curious_curios.common.items.curios.StoneOfInertiaNull
-import dev.cypheriel.curious_curios.common.items.curios.StoneOfTheSea
+import dev.cypheriel.curious_curios.common.items.curios.*
 import net.minecraft.world.item.Item
 import net.minecraftforge.eventbus.api.IEventBus
 import net.minecraftforge.registries.DeferredRegister
@@ -42,4 +39,5 @@ object ItemRegistry {
     val stoneOfTheSea: RegistryObject<Item> = items.register("stone_of_the_sea") { StoneOfTheSea }
     val stoneOfGreaterInertia: RegistryObject<Item> =
         items.register("stone_of_greater_inertia") { StoneOfGreaterInertia }
+    val witherRing: RegistryObject<Item> = items.register("wither_ring") { WitherRing }
 }
