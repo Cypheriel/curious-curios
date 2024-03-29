@@ -55,6 +55,6 @@ jobs:
       - name: Publish to Modrinth
         uses: Kir-Antipov/mc-publish@v3.3
         with:
-          modrinth-id: curious-curios
+          modrinth-id: lWN93xWs
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
           modrinth-featured: false
