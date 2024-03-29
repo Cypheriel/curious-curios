@@ -12,6 +12,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment: production
 
     steps:
       - name: Checkout
@@ -51,3 +52,10 @@ jobs:
         with:
           name: Curious Curios
           path: build/libs/*.jar
+          
+      - name: Publish to Modrinth
+        uses: Kir-Antipov/mc-publish@v3.3
+        with:
+          modrinth-id: lWN93xWs
+          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
+          modrinth-featured: false
